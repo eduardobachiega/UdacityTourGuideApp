@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">UdacityTourGuideApp</string>
+    <string name="app_name">Udacity Tour Guide App</string>
+    <string name="city">City: São Paulo</string>
+    <string name="menu_restaurant">Restaurants</string>
+    <string name="menu_hotels">Hotels</string>
+    <string name="menu_parks">Parks</string>
+    <string name="menu_malls">Malls</string>
+    <string name="menu_transport">Transport</string>
+    <string name="descr_restaurant">Find the best restaurants</string>
+    <string name="descr_hotels">Find the best hotels options</string>
+    <string name="descr_parks">Find the best parks to spend the day</string>
+    <string name="descr_malls">The best places to shop</string>
+    <string name="descr_transport">The best options to get around</string>
 </resources>
