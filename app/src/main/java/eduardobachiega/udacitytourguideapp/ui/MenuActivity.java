@@ -1,10 +1,12 @@
 package eduardobachiega.udacitytourguideapp.ui;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +35,13 @@ public class MenuActivity extends AppCompatActivity {
         rvMenuItems.setLayoutManager(new LinearLayoutManager(context));
         MenuRecyclerAdapter adapter = new MenuRecyclerAdapter(setupMenuItems());
         rvMenuItems.setAdapter(adapter);
+        adapter.setOnItemClickListener(new MenuRecyclerAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent = new Intent(context, PlacesActivity.class);
+                intent.putExtra("ITEM", position);
+            }
+        });
     }
 
     private List<MenuItem> setupMenuItems() {
